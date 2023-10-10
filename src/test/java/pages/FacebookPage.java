@@ -8,9 +8,11 @@ import utilities.Driver;
 public class FacebookPage {
     public FacebookPage(){
         PageFactory.initElements(Driver.getDriver(),this);}
-        @FindBy(id="email")
+
+    @FindBy(id="email")
                 public WebElement emailKutusu;
-        @FindBy(id="pass")
+
+    @FindBy(id="pass")
     public WebElement passwordKutusu;
 
     @FindBy(xpath = "//*[@type='submit']")

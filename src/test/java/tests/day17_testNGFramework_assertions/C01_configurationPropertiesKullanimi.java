@@ -13,19 +13,23 @@ public class C01_configurationPropertiesKullanimi {
     public void test01(){
         // amazon anasayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
-        //parantezin icine  configuration.properties   dosyasindan amazonUrl'i
-        //bana getirecek bir seyler yazmam lazim
+        // parantezin icin configuration.properties dosyasindan amazonUrl'i
+        // bana getirecek bir seyler yazmam lazim
 
         // arama kutusuna aranacak kelimeyi yazdirin ve aratin
-        AmazonPage amazonPage=new AmazonPage();
-        amazonPage.aramakutusu.sendKeys(ConfigReader.getProperty("amazonAranacakKelime")+ Keys.ENTER);
+        AmazonPage amazonPage = new AmazonPage();
+        amazonPage.aramaKutusu.sendKeys(ConfigReader.getProperty("amazonAranacakKelime") + Keys.ENTER);
+
         // arama sonuclarinin aranan kelimeyi icerdigini test edin
-         String expectedIcerik =ConfigReader.getProperty("amazonAranacakKelime");
-         String actulaAramaSonucu =amazonPage.sonucYaziElementi.getText();
-        Assert.assertTrue(actulaAramaSonucu.contains(expectedIcerik));
-        
+
+        String expectedIcerik = ConfigReader.getProperty("amazonAranacakKelime");
+        String actualAramaSonucu = amazonPage.sonucYaziElementi.getText();
+
+        Assert.assertTrue(actualAramaSonucu.contains(expectedIcerik));
+
         // sayfayi kapatin
-        ReusableMethods.bekle(2);
-                  Driver.closeDriver();
+        ReusableMethods.bekle(3);
+        Driver.closeDriver();
+
     }
 }
