@@ -6,7 +6,7 @@ import pages.QualitydemyPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class C05_QualitydemyNegatifLogintesti {
+public class C05_QualitydemyNegatifLoginTesti {
     QualitydemyPage qualitydemyPage;
     @Test
     public void gecersizPasswordTest(){
