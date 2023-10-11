@@ -6,7 +6,7 @@ import pages.QualitydemyPage;
 import utilities.Driver;
 
 public class C04_QualitydemyPozitifLogin {
-    @Test
+    @Test (groups = {"e2e1",})
     public void pozitifLoginTesti(){
 
         //1- https://www.qualitydemy.com/ anasayfasina gidin

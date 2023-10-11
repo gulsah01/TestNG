@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C01_DriverClassKullanimi {
 
-    @Test
+    @Test (groups = {"smoke",})
     public void amazontest() {
         // amazon a gidelim
         Driver.getDriver().get("https://www.amazon.com");
@@ -16,7 +16,7 @@ public class C01_DriverClassKullanimi {
         // sayfayi kapatin
         Driver.closeDriver();
     }
-@Test
+@Test (groups = {"smoke","e2e1","regression"})
     public  void youtubeTesti(){
         Driver.getDriver().get("https://www.youtube.com");
         Driver.closeDriver();

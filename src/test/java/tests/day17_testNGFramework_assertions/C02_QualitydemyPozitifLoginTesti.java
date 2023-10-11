@@ -8,7 +8,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 public class C02_QualitydemyPozitifLoginTesti {
-    @Test
+    @Test (groups = {"smoke","e2e1","regression"})
     public void pozitifLoginTesti(){
 //1- https://www.qualitydemy.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
