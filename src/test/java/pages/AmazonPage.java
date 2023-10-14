@@ -26,13 +26,15 @@ public class AmazonPage {
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement sonucYaziElementi;
 
+    @FindBy(xpath = "//select[@title='Search in']")
+    public WebElement dropDownElementi;
+
     @FindBy(xpath = "(//div[@class='a-section aok-relative s-image-square-aspect'])[1]")
     public WebElement ilkUrunElementi;
 
     @FindBy(xpath = "//span[@class='a-size-large product-title-word-break']")
     public WebElement ilkUrunIsimElementi;
 
-    @FindBy(xpath = "//*[@id='searchDropdownBox']")
-    public WebElement dropDownElementi;
+
 
 }
