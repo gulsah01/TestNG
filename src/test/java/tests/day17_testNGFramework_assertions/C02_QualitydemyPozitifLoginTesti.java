@@ -24,7 +24,7 @@ public class C02_QualitydemyPozitifLoginTesti {
         ReusableMethods.bekle(2);
 //cookies kabul edin
         ReusableMethods.bekle(2);
-        qualitydemyPage.acceptCookies.click();
+       // qualitydemyPage.acceptCookies.click();
         ReusableMethods.bekle(1);
 
 // 5- Login butonuna basarak login olun

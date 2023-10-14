@@ -14,7 +14,7 @@ public class C04_QualitydemyPozitifLogin {
         //2- login linkine basin
         QualitydemyPage qualitydemyPage = new QualitydemyPage();
         qualitydemyPage.ilkLoginLinki.click();
-        qualitydemyPage.acceptCookies.click();
+        qualitydemyPage.cookiesElementi.click();
 
         //3- Kullanici email'i olarak valid email girin
         qualitydemyPage.emailKutusu.sendKeys("anevzatcelik@gmail.com");
