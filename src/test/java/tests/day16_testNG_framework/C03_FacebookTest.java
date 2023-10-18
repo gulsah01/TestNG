@@ -16,6 +16,7 @@ public class C03_FacebookTest {
 
         ReusableMethods.bekle(1);
 
+
         //3- Faker class’ini kullanarak email ve sifre degerlerini yazdirip, giris butonuna basin
 
         Faker faker = new Faker();
