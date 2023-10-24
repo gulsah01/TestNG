@@ -22,6 +22,8 @@ public class C03_FacebookTest {
         Faker faker = new Faker();
         FacebookPage facebookPage = new FacebookPage();
         facebookPage.cookiesKabulButonu.click();
+
+
         ReusableMethods.bekle(1);
 
         facebookPage.emailKutusu.sendKeys(faker.internet().emailAddress());
