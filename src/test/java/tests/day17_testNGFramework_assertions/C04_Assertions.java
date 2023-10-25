@@ -13,6 +13,8 @@ public class C04_Assertions {
 // amazon anasayfaya gidelim
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
 
+
+
         // url'in amazon icerdigini test edelim
         String expectedIcerik = "amazon";
         String actualUrl = Driver.getDriver().getCurrentUrl();
